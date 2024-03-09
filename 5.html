@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>3.10 CTF</title>
+    <meta name="twitter:title" content="3.10 CTF">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Escape room of 3.10 Nehemiah, Anglo-Chinese School (Independent)">
+    <meta property="og:image" content="https://ctf310.bss.design/assets/img/DRONE-0002.jpg">
+    <meta name="twitter:description" content="Escape room of 3.10 Nehemiah, Anglo-Chinese School (Independent)">
+    <link rel="icon" type="image/png" sizes="983x983" href="/assets/img/ACS(I)%20School%20Crest_Full%20Colour.png">
+    <link rel="icon" type="image/png" sizes="983x983" href="/assets/img/ACS(I)%20School%20Crest_Full%20Colour.png">
+    <link rel="icon" type="image/png" sizes="983x983" href="/assets/img/ACS(I)%20School%20Crest_Full%20Colour.png">
+    <link rel="icon" type="image/png" sizes="983x983" href="/assets/img/ACS(I)%20School%20Crest_Full%20Colour.png">
+    <link rel="icon" type="image/png" sizes="983x983" href="/assets/img/ACS(I)%20School%20Crest_Full%20Colour.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/IBM%20Plex%20Mono.css">
+    <link rel="stylesheet" href="/assets/css/IBM%20Plex%20Sans.css">
+    <link rel="stylesheet" href="/assets/css/IBM%20Plex%20Serif.css">
+    <link rel="stylesheet" href="/assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="/assets/css/Navbar-Right-Links-Dark-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-dark py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-code-slash">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"></path>
+                    </svg></span><span>3.10 Escape Room</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link active" href="/guide.html">Guide</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/list.html">Challenge List</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span style="color: rgba(255, 255, 255, 0.75);">Challenges</span></a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="/0.html">Challenge #0</a><a class="dropdown-item" href="/1.html">Challenge #1</a><a class="dropdown-item" href="/2.html">Challenge #2</a><a class="dropdown-item" href="/3.html">Challenge #3</a><a class="dropdown-item" href="/4.html">Challenge #4</a><a class="dropdown-item" href="/5.html">Challenge #5</a><a class="dropdown-item" href="/6.html">Challenge #6</a><a class="dropdown-item" href="/7.html">Challenge #7</a><a class="dropdown-item" href="/8.html">Challenge #8</a><a class="dropdown-item" href="/9.html">Challenge #9</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div data-bss-parallax-bg="true" style="height: 600px;background: url(&quot;/assets/img/fabian-blank-pElSkGRA2NU-unsplash.jpg&quot;) center / cover;">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
+                        <div style="max-width: 350px;">
+                            <h1 class="text-uppercase fw-bold" style="color: rgb(255,255,255);font-family: 'IBM Plex Mono', monospace;background: #ce0e2d;padding: 10px;">Challenge #5</h1><p id="para" class="my-3" style="color: rgb(0,32,92);font-family: 'IBM Plex Mono', monospace;background: #ffc629;padding: 10px;">Oh no!<br /><br />You can&#39;t afford the flag, as it costs $1000. Your bank account contains solely $100. How will you buy the flag? Your balance is stated below. <br><br>Your flag will appear here once you purchase it: 310{}</p>
+
+<script>
+    function flag() {
+    var balance = document.getElementById("money").innerHTML;
+    balance = parseInt(balance.slice(1))
+    if (balance >= 1000) {
+      document.getElementById("money").innerHTML = "$" + (balance - 1000);
+      eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('B.h("c").8="9 a!<0 /><0 />d e&#f;t g 4 1, i 6 j $k. 2 b m n o $5. l 3 7 q 4 1? 2 r s u v. <0><0>2 1 3 w x y 7 z 6: A{p$5}";',38,38,'br|flag|Your|will|the|100|it|you|innerHTML|Oh|no|bank|para|You|can|39|afford|getElementById|as|costs|1000|How|account|contains|solely|hack|buy|balance|is||stated|below|appear|here|once|purchase|310|document'.split('|'),0,{}))
+    } else {
+        alert("You don't have enough money!");
+    }
+}
+</script>
+                            <h1 class="text-uppercase fw-bold" id="money" style="color: rgb(255,255,255);font-family: 'IBM Plex Mono', monospace;background: #00205c;padding: 10px;">$100</h1><a class="btn btn-primary btn-lg me-2" role="button" id="buy" style="font-family: 'IBM Plex Mono', monospace;" onclick="flag();">Buy Flag</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-dark">
+        <div class="container text-white py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-light" href="/index.html">Home Page</a></li>
+                <li class="list-inline-item me-4"><a class="link-light" href="/guide.html">Guide</a></li>
+                <li class="list-inline-item"><a class="link-light" href="/list.html">Challenge List</a></li>
+            </ul>
+            <p class="text-muted mb-0">Created by Janav Nagapatla, Aiden Lim and Reyes Lee of 3.10 Nehemiah</p>
+        </div>
+    </footer>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+</body>
+
+</html>
